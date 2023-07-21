@@ -15,12 +15,12 @@ void loop() {
   Serial.println(state);
 
   if(state < 100){
-    digitalWrite(5,HIGH);
+    digitalWrite(5,HIGH);    //모터 작동
     digitalWrite(9,LOW);
     Serial.println("Warning");  //경보 메세지를 시리얼 모니터에 출력
   }
   else{
-    digitalWrite(5,LOW);
+    digitalWrite(5,LOW);   //모터 중지
     digitalWrite(9,LOW);
     Serial.println("Safe");  //안전 메세지를 시리얼 모니터에 출력
   }
